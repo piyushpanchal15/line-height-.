@@ -1,0 +1,30 @@
+@layer demo {
+  h1 {
+    line-height: 1cap;
+  }
+}
+
+@layer demo.support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    block-size: 100%;
+    color-scheme: dark light;
+  }
+
+  body {
+    min-block-size: 100%;
+    font-family: system-ui, sans-serif;
+
+    display: grid;
+    place-content: center;
+    padding: 5vmin;
+  }
+  
+  h1 {
+    font-size: min(20vh, 20vw);
+  }
+}
